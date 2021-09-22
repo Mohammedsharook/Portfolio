@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#container {
+	background: #151515 url('./images/bg.jpg') no-repeat center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	min-height: 720px;
+}
+.container-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #111111;
+	opacity: .90;
+}
+
+.container-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.link{
+    position:absolute;
+    bottom:150px;
+}
+.btn{
+    text-decoration: none;
+    border-radius: 50px;
+    width: 250px;
+    height: 200px;
+    padding: 6px;
+    color: white;
+    background-color: palevioletred;
+    font-size: 35px;
+ 
+    transition: ease-out;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    
+}
+
+.section-about{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.abt-heading{
+    width: 100%;
+}
+
+.pic{
+
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#image-pic{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+  
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+li{
+    margin-bottom: 15px;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+span{
+    color: black;
+    font-weight: bold;
+}
+
+strong{
+    color: palevioletred;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    height: 300px;
+}
+
+.bott{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
